@@ -1,0 +1,212 @@
+/* Colors */
+/* ---------------------------------------- */
+:root {
+  --border: #c6c6c6;
+  --border-focus: #9fb1c1;
+  --blue: #077abc;
+  --aqua: #07b3a1;
+  --asphalt: #506982;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Lato", "sans-serif";
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,
+form {
+  padding: 4em 10%;
+}
+
+header {
+  background-color: var(--blue);
+  color: white;
+}
+
+header h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+header h1 i {
+  color: #04639c;
+}
+
+header h1 span {
+  font-weight: 300;
+}
+
+header p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+header h3,
+header h3 a {
+  color: #32ccfe;
+}
+
+header h3 a {
+  transition: color 0.3s;
+}
+
+header h3 a:hover {
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+h2.heading {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: left;
+  color: var(--asphalt);
+  border-bottom: 1px solid var(--asphalt);
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+
+h2.heading-2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: left;
+  color: var(--asphalt);
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  text-align: left;
+  position: relative;
+}
+
+.controls input[type="text"],
+.controls input[type="email"],
+.controls input[type="tel"],
+.controls input[type="number"],
+.controls input[type="password"],
+.controls textarea,
+.controls button,
+.controls select {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  width: 100%;
+  margin-bottom: 18px;
+  color: #888;
+  font-family: "Lato", "sans-serif";
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.controls input[type="text"]:focus,
+.controls input[type="email"]:focus,
+.controls input[type="tel"]:focus,
+.controls textarea:focus,
+.controls button:focus,
+.controls select:focus,
+.controls input[type="text"]:hover,
+.controls input[type="email"]:hover,
+.controls input[type="tel"]:hover,
+.controls textarea:hover,
+.controls button:hover,
+.controls select:hover {
+  outline: none;
+  border-color: var(--border-focus);
+}
+
+.controls input[type="text"]:focus + label,
+.controls input[type="email"]:focus + label,
+.controls input[type="tel"]:focus + label,
+.controls textarea:focus + label,
+.controls button:focus + label,
+.controls select:focus + label,
+.controls input[type="text"]:hover + label,
+.controls input[type="email"]:hover + label,
+.controls input[type="tel"]:hover + label,
+.controls textarea:hover + label,
+.controls button:hover + label,
+.controls select:hover + label {
+  color: var(--blue);
+  cursor: text;
+}
+
+.controls .fa-sort {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  color: #999;
+}
+
+.controls select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.controls label {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+  pointer-events: none;
+  transition: color 0.3s, top 0.3s, background-color 0.8s;
+}
+
+.controls label.active {
+  top: -11px;
+  color: #555;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.controls textarea {
+  resize: none;
+  height: 200px;
+}
+
+.controls button {
+  cursor: pointer;
+  background-color: var(--aqua);
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+}
+
+.controls button:hover {
+  background-color: #08cab2;
+}
+
+.nameContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.locationContainer {
+  display: flex;
+  justify-content: space-between;
+}
